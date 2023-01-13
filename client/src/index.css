@@ -7,9 +7,9 @@
 input {
     border-radius: 2px !important;
     border: 1 px solid rgba(128, 128, 128, 0.521) !important;
-    height: 40px !important;
+    height: 30px !important;
 }
-input:focus {
+input:focus.ant-picker {
     outline: none !important;
     box-shadow: none !important;
     border: 1px solid gray;
@@ -20,21 +20,43 @@ label {
 }
 .ant-form-item{
     margin: 10px 0px;
+    
+}
+.ant-picker-input input{
+border: none !important;
+}
+.ant-picker {
+    border-radius: 2px !important;
+    border: 1 px solid rgba(128, 128, 128, 0.521) !important;
+    height: 30px !important;
 }
 /* Common styling */
-.card-title {
-    font-size:1.5rem ;
+.page-title{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.815);
     font-weight: bold;
+    margin-bottom: 0;
 }
-
+.card-title {
+    font-size:13px ;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.591);
+}
+p{
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.653);
+}
 .normal-text {
 font-size: 1rem;
 }
 .card {
-    box-shadow: 0 0 2px gray;
+    box-shadow: 0 0 2px rgb(188, 181, 181);
     border-radius: 0px !important;
 }
-
+.cursor-pointer{
+    cursor: pointer;
+}
 .primary-button {
     background-color: #005555 !important;
     border-color: #005555 !important;
@@ -62,6 +84,7 @@ font-size: 1rem;
     color: black !important;
     text-decoration: underline;
     font-size: 16px !important;
+    cursor: pointer;
 }
 .anchor:hover {
     text-decoration: underline;
@@ -75,4 +98,25 @@ font-size: 1rem;
     padding:7px 15px;
     margin-left: -40px;
     border-bottom-left-radius: 10px;
+}
+
+/* Spinner edit */
+
+.spinner-parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    height: 100%;
+    width: 100%;
+}
+.spinner-border{
+    width: 5rem;
+    height: 5rem;
+    color: white !important;
 }
